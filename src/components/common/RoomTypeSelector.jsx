@@ -30,7 +30,9 @@ const RoomTypeSelector = ({handleRoomInputChange, newRoom}) => {
     <>
     {roomTypes.length > 0 && (
       <div>
-        <select name="roomType" 
+        <select required
+                className="form-select"
+                name="roomType" 
                 id="roomType"
                 value={newRoom.roomTypes}
                 onChange={(e) => {
@@ -43,7 +45,7 @@ const RoomTypeSelector = ({handleRoomInputChange, newRoom}) => {
                     handleRoomInputChange(e)
                   }
                 }}>
-                  <option value="">select a room type</option>
+                  <option value="">Select a room type</option>
                   <option value={"Add New"}>Add New</option>
                   {roomTypes.map((type, index) => (
                     <option key={index} value={type}>
@@ -52,14 +54,17 @@ const RoomTypeSelector = ({handleRoomInputChange, newRoom}) => {
                   ))}
                 </select>
                 {showNewRoomTypeInput && (
+                  <div className="mt-2">
                   <div className='input-group'>
                     <input  className='form-control'
                             type="text" 
                             placeholder='Enter a new room type'
+                            value={newRoomType}
                             onChange={handleNewRoomTypeInputChange}
                     />
                     <button className='btn btn-hotel' type='button' onClick={handleAddNewRoomType}>
                       Add</button>
+                  </div>
                   </div>
                 )}
       </div>
