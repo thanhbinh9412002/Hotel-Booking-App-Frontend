@@ -1,6 +1,6 @@
 import React from "react";
 
-const RoomPaginNator = (currentPage, totalPages, onPageChange) => {
+const RoomPaginator = (currentPage, totalPages, onPageChange) => {
     const pageNumbers = Array.from({length : totalPages}, (_, i) => i+1)
   return (
     <nav>
@@ -18,4 +18,4 @@ const RoomPaginNator = (currentPage, totalPages, onPageChange) => {
   )
 }
 
-export default RoomPaginNator
+export default RoomPaginator
