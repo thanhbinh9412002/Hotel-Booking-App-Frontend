@@ -1,10 +1,10 @@
 import React from "react";
 
-const RoomPaginator = (currentPage, totalPages, onPageChange) => {
+const Pagination = ({currentPage, totalPages, onPageChange}) => {
     const pageNumbers = Array.from({length : totalPages}, (_, i) => i+1)
   return (
-    <nav>
-        <ul className="pagination, justify-content-center">
+    <nav aria-label="Page navigation">
+        <ul className="pagination justify-content-center">
             {pageNumbers.map((pageNumber) => (
                 <li key={pageNumber}
                 className={`page-item ${currentPage === pageNumber ? "active" : ""}`}>
@@ -18,4 +18,4 @@ const RoomPaginator = (currentPage, totalPages, onPageChange) => {
   )
 }
 
-export default RoomPaginator
+export default Pagination

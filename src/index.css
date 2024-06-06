@@ -223,5 +223,34 @@ body {
   text-align: center;
 }
 
+.carousel_h1{
+  font-Size: 100px;
+  font-Weight: 700;
+  color:red
+}
+
+.carousel_h4{
+  font-Size: 40px; 
+  top: 2rem; 
+  color:white;
+}
+
+.carousel_img{
+  background-size: contain; 
+  background-Position: center;
+  position: relative; 
+  height: 60vh;
+}
+
+.summary{
+  width: 400px;
+}
+
+.largeLabel {
+  font-size: 30px;
+  color: crimson;
+  text-align: left;
+}
+
 
 

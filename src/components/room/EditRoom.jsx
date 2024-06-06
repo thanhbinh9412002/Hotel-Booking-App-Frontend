@@ -128,7 +128,7 @@ const EditRoom = () => {
 							<Link to={"/existing-rooms"} className="btn btn-outline-info ml-5" >
 								back
 							</Link>
-							<button style="margin: 10px" type="submit" className="btn btn-outline-warning">
+							<button type="submit" className="btn btn-outline-warning">
 								Edit Room
 							</button>
 						</div>
